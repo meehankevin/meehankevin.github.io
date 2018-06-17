@@ -12,23 +12,25 @@
  <title>CV</title>
  </head>
 <body>
- <div class="navbar">
-<ul id="pullLeft">
-	<li><a style="color:white;background-color:#76323F;" href="index.html">Kevin Meehan</a></li>
-</ul>
- <ul id="pullRight">
- 	<li><a href="CV.html">CV</a></li>
-	<li><a href="myWork.html">My Work</a></li>
-	<li><a href="hobbiesInterests.html">Hobbies and Interests</a></li>
-	<li><a href="timeline.html">Career Timeline</a></li>
+<div class="navbar">
+ <ul style="left:5%;">
+	<li><a id="button" style="color:white; background-color:#76323F;" href="index.html">Kevin Meehan</a></li>
  </ul>
- </div>
+ <ul style="right:5%;">
+ 	<li><a id="button" href="CV.html">CV</a></li>
+	<li><a id="button" href="myWork.html">My Work</a></li>
+	<li><a id="button" href="hobbiesInterests.html">Hobbies and Interests</a></li>
+	<li><a id="button" href="timeline.html">Career Timeline</a></li>
+ </ul>
+</div>
 <div class="container">
   <br><br>
-  So the following is my CV. I've broken it down a bit more in the other tabs, but feel free to have a quick glance or <a href="docs/CV.pdf" download>download</a> it!
+  The following is my CV. I've provided it in both European and US format, so take your pick!
   <br><br>
-  <object data="docs/CV.pdf" type="application/pdf" width="75%" height="100%">
-  <iframe src="docs/CV.pdf" width="100%" height="100%" style="border: none;">
+  <button id="button" style="font-size:16px;" onclick="document.getElementById('CV').src='docs/CV.pdf'">European</button>
+  <button id="button" style="font-size:16px;" onclick="document.getElementById('CV').src='docs/Resume.pdf'">US</button> 
+  <br><br>
+  <iframe id="CV" style="position:relative; text-align:center;" src="docs/CV.pdf" width="75%" height="2300px">
   This browser does not support PDFs. Please download the PDF to view it: <a href="docs/CV.pdf">Download PDF</a>
   </iframe>
   </object>
