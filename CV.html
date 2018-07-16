@@ -24,17 +24,22 @@
  </ul>
 </div>
 <div class="container">
-  <br><br>
-  The following is my CV. I've provided it in both European and US format, so take your pick!
-  <br><br>
-  <button id="button" style="font-size:16px;" onclick="document.getElementById('CV').src='docs/CV.pdf'">European</button>
-  <button id="button" style="font-size:16px;" onclick="document.getElementById('CV').src='docs/Resume.pdf'">US</button> 
-  <br><br>
-  <iframe id="CV" style="position:relative; text-align:center;" src="docs/CV.pdf" width="75%" height="2300px">
-  This browser does not support PDFs. Please download the PDF to view it: <a href="docs/CV.pdf">Download PDF</a>
-  </iframe>
-  </object>
-</div>
+	<br>
+    <div class="switch-field">
+        <input type="radio" name="iframe" id="switch_left" value="European" onClick="changeSrc('docs/CV.pdf')" checked="checked"/>
+		<label for="switch_left">European</label>
+        <input type="radio" name="iframe" id="switch_right" value="US" onClick="changeSrc('docs/Resume.pdf')"/>
+		<label for="switch_right">US</label>
+    </div>
+	<br>
+    <iframe id="CVsrc" style="position:relative; text-align:center;" src="docs/CV.pdf" width="75%" height="2300px"></iframe>
+</div>  
 <br><br><br>
 </body>
+<script>
+    function changeSrc(CV){
+      console.log(CV);
+        document.getElementById('CVsrc').src = CV; 
+    }
+</script>
 </html>
