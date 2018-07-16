@@ -1,0 +1,1 @@
+Hello! This is a simple repo to host my career webpage. Feel free to download the HTML and CSS files if you'd like to do something similar yourself, but obviously you'll have to change the information. I used the guide at https://gist.github.com/TylerFisher/6127328 to configure the hosting. 
