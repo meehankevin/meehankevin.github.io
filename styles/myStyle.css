@@ -70,12 +70,12 @@ html,body{height:100%; font-family:Raleway,sans-serif; font-size:20px; margin:0;
 }
 .pdf{display:block;	margin:auto;}
 .dropdown{position:relative; display:inline-block; top:5%;}
-.dropbtn{background-color:#e2aa00; color:black; padding:16px; font-size:16px; border:2px solid #e2aa00;	border-radius:5px; cursor:pointer;}
-.dropdown-content{display:none; position:absolute; background-color:#f4bc13; min-width:160px; box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;}
+.dropbtn{background-color:#96c8a2; color:black; padding:16px; font-size:16px; border:2px solid #5f9ea0;	border-radius:5px; cursor:pointer;}
+.dropdown-content{display:none; position:absolute; background-color:#96c8a2; min-width:160px; box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;}
 .dropdown-content a{color:black; padding:12px 16px; text-decoration:none; display:block;}
-.dropdown-content a:hover{background-color:#e2aa00;}
+.dropdown-content a:hover{background-color:#5f9ea0;}
 .dropdown:hover .dropdown-content{display:block;}
-.dropdown:hover .dropbtn{background-color:#e2aa00;}
+.dropdown:hover .dropbtn{background-color:#5f9ea0;}
 .project{display:inline-block; border-style:ridge; width:20%; height:400px;	margin:25px; padding:10px; vertical-align:top;}
 .cd-container{width:100%; margin:0 auto; background-color:#EEF2F9;}
 .cd-container::after{content:''; display:table; clear:both;}
